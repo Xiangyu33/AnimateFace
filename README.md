@@ -66,13 +66,11 @@ If the script runs successfully, you will get `output/s6--d0_concat.mp4`. This v
 Or, you can change the input by specifying the `-s` and `-d` and arguments:
 
 ```bash
+# driven data from video 
 python demo.py -s assets/examples/source/s9.jpg -d assets/examples/driving/d0.mp4 -output_concate_video
 
 # driven data from frames
 python demo.py -s assets/examples/source/s9.jpg -d assets/examples/driving/d4 -output_image
-
-# or disable pasting back
-python demo.py -s assets/examples/source/s9.jpg -d assets/examples/driving/d4 --output_concate_video --no_flag_pasteback
 
 # only output generate video
 python demo.py --output_video
@@ -80,8 +78,11 @@ python demo.py --output_video
 # only output frames
 python demo.py --output_image
 
-# only output frames
+# only output concate_video
 python demo.py --output_concate_video
+
+# or disable pasting back
+python demo.py -s assets/examples/source/s9.jpg -d assets/examples/driving/d4 --output_concate_video --no_flag_pasteback
 
 # more options to see
 python demo.py -h

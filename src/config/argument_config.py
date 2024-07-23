@@ -17,12 +17,9 @@ class ArgumentConfig(PrintableConfig):
     source_image: Annotated[str, tyro.conf.arg(aliases=["-s"])] = make_abs_path('../../assets/examples/source/s6.jpg')  # path to the source portrait
     driving_info:  Annotated[str, tyro.conf.arg(aliases=["-d"])] = make_abs_path('../../assets/examples/driving/d0.mp4')  # path to driving video or template (.pkl format)
     output_dir: Annotated[str, tyro.conf.arg(aliases=["-o"])] = 'output/'  # directory to save output video
-    # output_video: Annotated[bool, tyro.conf.arg(aliases=["-output_video"])] = False
-    # output_image: Annotated[bool, tyro.conf.arg(aliases=["-output_image"])] = False
-    # output_concate_video: Annotated[bool, tyro.conf.arg(aliases=["-output_concate_video"])] = False
-    output_video: bool = False
-    output_image: bool = False
-    output_concate_video: bool = False
+    output_video: Annotated[bool, tyro.conf.arg(aliases=["-output_video"])] = False
+    output_image: Annotated[bool, tyro.conf.arg(aliases=["-output_image"])] = False
+    output_concate_video: Annotated[bool, tyro.conf.arg(aliases=["-output_concate_video"])] = False
     #####################################
 
     ########## inference arguments ##########
