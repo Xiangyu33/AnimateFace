@@ -73,16 +73,16 @@ python demo.py -s assets/examples/source/s9.jpg -d assets/examples/driving/d0.mp
 python demo.py -s assets/examples/source/s9.jpg -d assets/examples/driving/d4 -output_image
 
 # only output generate video
-python demo.py --output_video
+python demo.py -output_video
 
 # only output frames
-python demo.py --output_image
+python demo.py -output_image
 
 # only output concate_video
-python demo.py --output_concate_video
+python demo.py -output_concate_video
 
 # or disable pasting back
-python demo.py -s assets/examples/source/s9.jpg -d assets/examples/driving/d4 --output_concate_video --no_flag_pasteback
+python demo.py -s assets/examples/source/s9.jpg -d assets/examples/driving/d4 -output_concate_video --no_flag_pasteback
 
 # more options to see
 python demo.py -h
