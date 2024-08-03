@@ -40,5 +40,5 @@ if __name__ == '__main__':
     # process single image
     process_single_image(args)
 
-    # process single image
+    # process multi image
     # process_multi_image(args, "assets/examples/source")
